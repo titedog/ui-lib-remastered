@@ -348,7 +348,7 @@ function library:Window(title: string)
 		newB.Size = UDim2.new(0, 20, 0, 20)
 		newB.ZIndex = 8
 		newB.Image = "rbxassetid://3926305904"
-		newB.ImageColor3 = Color3.fromRGB(255, 183, 0)
+		newB.ImageColor3 = Color3.fromRGB(255, 255, 255)
 		newB.ImageRectOffset = Vector2.new(204, 484)
 		newB.ImageRectSize = Vector2.new(36, 36)
 		newB.Parent = Frame_5
