@@ -323,7 +323,6 @@ function library:Window(title: string)
 	function window:Button(text)
 		local Frame_5 = Instance.new("Frame")
 		local TextLabel_2 = Instance.new("TextLabel")
-		local btn = Instance.new("TextButton")
 
 		Frame_5.Parent = ScrollingFrame
 		Frame_5.BackgroundColor3 = Color3.fromRGB(157, 144, 111)
@@ -331,8 +330,8 @@ function library:Window(title: string)
 		Frame_5.Size = UDim2.new(0, 239, 0, 30)
 
 		TextLabel_2.Parent = Frame_5
-		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_2.BackgroundTransparency = 1.000
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		TextLabel_2.BackgroundTransparency = 0
 		TextLabel_2.Position = UDim2.new(0.0368297361, 0, 0.178787738, 0)
 		TextLabel_2.Size = UDim2.new(0, 189, 0, 18)
 		TextLabel_2.Font = Enum.Font.GothamSemibold
@@ -340,12 +339,6 @@ function library:Window(title: string)
 		TextLabel_2.TextColor3 = Color3.fromRGB(176, 176, 176)
 		TextLabel_2.TextSize = 13.000
 		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
-		
-		btn.Size = UDim2.fromScale(1, 1)
-		btn.BackgroundColor = Color3.fromRGB(30, 30, 30)
-		btn.Parent = Frame_5
-		btn.ZIndex = Frame_5.ZIndex + 1
-		TextLabel_2.ZIndex = btn.ZIndex + 1
 	end
 
 	function window:Slider(text, options, callback)
