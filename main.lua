@@ -118,7 +118,7 @@ function library:Window(title: string)
 		local ab = UIListLayout.AbsoluteContentSize
 		ScrollingFrame.CanvasSize = UDim2.new(0,0,0,ab.Y)
 	end)
-	
+
 	local UserInputService = game:GetService("UserInputService")
 
 	local gui = Frame.Parent
@@ -232,7 +232,7 @@ function library:Window(title: string)
 		local frame = Frame_5
 		local enabled = false
 
-		function turn()
+		local function turn()
 			enabled = not enabled
 			callback(enabled)
 
@@ -298,7 +298,7 @@ function library:Window(title: string)
 			c:Destroy()
 		end)
 	end
-	
+
 	function window:Label(text)
 		local Frame_5 = Instance.new("Frame")
 		local TextLabel_2 = Instance.new("TextLabel")
@@ -317,7 +317,7 @@ function library:Window(title: string)
 		TextLabel_2.Text = text
 		TextLabel_2.TextColor3 = Color3.fromRGB(176, 176, 176)
 		TextLabel_2.TextSize = 13.000
-		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Center
+		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 	end
 
 	function window:Slider(text, options, callback)
@@ -448,7 +448,7 @@ function library:Window(title: string)
 					bar.Visible = true
 					callback(max)
 				end
-				
+
 			end
 		end)
 	end
