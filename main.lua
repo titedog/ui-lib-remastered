@@ -326,7 +326,7 @@ function library:Window(title: string)
 
 		Frame_5.BackgroundColor3 = Color3.fromRGB(157, 144, 111)
 		Frame_5.BackgroundTransparency = 1.000
-		Frame_5.Size = UDim2.new(0, 239, 0, 30)
+		Frame_5.Size = UDim2.fromScale(0.8, 0.3)
 
 		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_2.BackgroundTransparency = 1.000
