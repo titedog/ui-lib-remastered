@@ -324,7 +324,6 @@ function library:Window(title: string)
 		local Frame_5 = Instance.new("Frame")
 		local TextLabel_2 = Instance.new("TextLabel")
 		local checked = Instance.new("ImageButton")
-		local unchecked = Instance.new("ImageButton")
 		local Frame_6 = Instance.new("Frame")
 
 		Frame_5.Parent = ScrollingFrame
