@@ -81,6 +81,9 @@ function library:Window(title: string)
 	fiber_manual_record.ImageColor3 = Color3.fromRGB(255, 183, 0)
 	fiber_manual_record.ImageRectOffset = Vector2.new(204, 484)
 	fiber_manual_record.ImageRectSize = Vector2.new(36, 36)
+	fiber_manual_record.MouseButton1Click:Connect(function()
+		ScreenGui:Destroy()
+	end)
 
 	Sample.Name = "Sample"
 	Sample.Parent = ScreenGui
