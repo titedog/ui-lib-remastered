@@ -324,9 +324,7 @@ function library:Window(title: string)
 		local Frame_5 = Instance.new("Frame")
 		local TextLabel_2 = Instance.new("TextLabel")
 		local checked = Instance.new("ImageButton")
-		local Sample_2 = Instance.new("ImageLabel")
 		local unchecked = Instance.new("ImageButton")
-		local Sample_3 = Instance.new("ImageLabel")
 		local Frame_6 = Instance.new("Frame")
 
 		Frame_5.Parent = ScrollingFrame
@@ -352,24 +350,7 @@ function library:Window(title: string)
 		checked.Size = UDim2.new(0, 20, 0, 20)
 		checked.ZIndex = 2
 		checked.Image = "rbxassetid://3926309567"
-		checked.ImageColor3 = Color3.fromRGB(189, 189, 189)
-		checked.ImageRectOffset = Vector2.new(784, 420)
-		checked.ImageRectSize = Vector2.new(48, 48)
 		checked.ImageTransparency = 0.000
-
-		Sample_2.Name = "Sample"
-		Sample_2.Parent = ScreenGui
-		Sample_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		Sample_2.BackgroundTransparency = 1.000
-		Sample_2.Image = "rbxassetid://3926305904"
-		Sample_2.ImageTransparency = 0.600
-
-		Sample_3.Name = "Sample"
-		Sample_3.Parent = ScreenGui
-		Sample_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		Sample_3.BackgroundTransparency = 1.000
-		Sample_3.Image = "http://www.roblox.com/asset/?id=4560909609"
-		Sample_3.ImageTransparency = 0.600
 		
 		checked.MouseButton1Click:Connect(function()
 			callback()
