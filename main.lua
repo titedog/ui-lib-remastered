@@ -347,7 +347,7 @@ function library:Window(title: string)
 
 		checked.Name = "checked"
 		checked.Parent = Frame_5
-		checked.BackgroundTransparency = 0.000
+		checked.BackgroundTransparency = 1.000
 		checked.Position = UDim2.new(0.916318059, 0, 0.13333334, 0)
 		checked.Size = UDim2.new(0, 20, 0, 20)
 		checked.ZIndex = 2
@@ -355,13 +355,13 @@ function library:Window(title: string)
 		checked.ImageColor3 = Color3.fromRGB(189, 189, 189)
 		checked.ImageRectOffset = Vector2.new(784, 420)
 		checked.ImageRectSize = Vector2.new(48, 48)
-		checked.ImageTransparency = 1.000
+		checked.ImageTransparency = 0.000
 
 		Sample_2.Name = "Sample"
 		Sample_2.Parent = ScreenGui
 		Sample_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Sample_2.BackgroundTransparency = 1.000
-		Sample_2.Image = "http://www.roblox.com/asset/?id=4560909609"
+		Sample_2.Image = "rbxassetid://3926305904"
 		Sample_2.ImageTransparency = 0.600
 
 		Sample_3.Name = "Sample"
