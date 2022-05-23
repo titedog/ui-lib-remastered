@@ -325,13 +325,13 @@ function library:Window(title: string)
 		local TextLabel_2 = Instance.new("TextLabel")
 
 		Frame_5.Parent = ScrollingFrame
-		Frame_5.BackgroundColor3 = Color3.fromRGB(157, 144, 111)
-		Frame_5.BackgroundTransparency = 1.000
+		Frame_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		Frame_5.BackgroundTransparency = 0
 		Frame_5.Size = UDim2.new(0, 239, 0, 30)
 
 		TextLabel_2.Parent = Frame_5
 		TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-		TextLabel_2.BackgroundTransparency = 0
+		TextLabel_2.BackgroundTransparency = 1.000
 		TextLabel_2.Position = UDim2.new(0.0368297361, 0, 0.178787738, 0)
 		TextLabel_2.Size = UDim2.new(0, 189, 0, 18)
 		TextLabel_2.Font = Enum.Font.GothamSemibold
