@@ -323,7 +323,7 @@ function library:Window(title: string)
 	function window:Button(text, callback)
 		local Frame_5 = Instance.new("Frame")
 		local TextLabel_2 = Instance.new("TextLabel")
-		local checked = Instance.new("ImageButton")
+		local newB = Instance.new("ImageButton")
 		local Frame_6 = Instance.new("Frame")
 
 		Frame_5.Parent = ScrollingFrame
@@ -342,16 +342,16 @@ function library:Window(title: string)
 		TextLabel_2.TextSize = 13.000
 		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
-		checked.Name = "checked"
-		checked.Parent = Frame_5
-		checked.BackgroundTransparency = 1.000
-		checked.Position = UDim2.new(0.916318059, 0, 0.13333334, 0)
-		checked.Size = UDim2.new(0, 20, 0, 20)
-		checked.ZIndex = 2
-		checked.Image = "rbxassetid://3926305904"
-		checked.ImageColor3 = Color3.fromRGB(255, 183, 0)
-		checked.ImageRectOffset = Vector2.new(204, 484)
-		checked.ImageRectSize = Vector2.new(36, 36)
+		newB.Name = "checked"
+		newB.BackgroundTransparency = 1
+		newB.Position = UDim2.new(0.916318059, 0, 0.13333334, 0)
+		newB.Size = UDim2.new(0, 20, 0, 20)
+		newB.ZIndex = 8
+		newB.Image = "rbxassetid://3926305904"
+		newB.ImageColor3 = Color3.fromRGB(255, 183, 0)
+		newB.ImageRectOffset = Vector2.new(204, 484)
+		newB.ImageRectSize = Vector2.new(36, 36)
+		newB.Parent = Frame_5
 		
 		checked.MouseButton1Click:Connect(function()
 			callback()
