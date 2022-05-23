@@ -324,6 +324,7 @@ function library:Window(title: string)
 		local Frame_5 = Instance.new("Frame")
 		local TextLabel_2 = Instance.new("TextLabel")
 		local newB = Instance.new("ImageButton")
+		newB.MouseButton1Click:Connect(callback)
 		local Frame_6 = Instance.new("Frame")
 
 		Frame_5.Parent = ScrollingFrame
@@ -351,7 +352,6 @@ function library:Window(title: string)
 		newB.ImageColor3 = Color3.fromRGB(255, 255, 255)
 		newB.ImageRectOffset = Vector2.new(204, 484)
 		newB.ImageRectSize = Vector2.new(36, 36)
-		newB.MouseButton1Click:Connect(callback)
 		
 		newB.Parent = Frame_5
 	end
