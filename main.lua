@@ -320,17 +320,22 @@ function library:Window(title: string)
 		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 	end
 	
-	function window:Button(text)
+	function window:Button(text, callback)
 		local Frame_5 = Instance.new("Frame")
 		local TextLabel_2 = Instance.new("TextLabel")
+		local checked = Instance.new("ImageButton")
+		local Sample_2 = Instance.new("ImageLabel")
+		local unchecked = Instance.new("ImageButton")
+		local Sample_3 = Instance.new("ImageLabel")
+		local Frame_6 = Instance.new("Frame")
 
 		Frame_5.Parent = ScrollingFrame
-		Frame_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-		Frame_5.BackgroundTransparency = 0
+		Frame_5.BackgroundColor3 = Color3.fromRGB(157, 144, 111)
+		Frame_5.BackgroundTransparency = 1.000
 		Frame_5.Size = UDim2.new(0, 239, 0, 30)
 
 		TextLabel_2.Parent = Frame_5
-		TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_2.BackgroundTransparency = 1.000
 		TextLabel_2.Position = UDim2.new(0.0368297361, 0, 0.178787738, 0)
 		TextLabel_2.Size = UDim2.new(0, 189, 0, 18)
@@ -339,6 +344,36 @@ function library:Window(title: string)
 		TextLabel_2.TextColor3 = Color3.fromRGB(176, 176, 176)
 		TextLabel_2.TextSize = 13.000
 		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+		checked.Name = "checked"
+		checked.Parent = Frame_5
+		checked.BackgroundTransparency = 0.000
+		checked.Position = UDim2.new(0.916318059, 0, 0.13333334, 0)
+		checked.Size = UDim2.new(0, 20, 0, 20)
+		checked.ZIndex = 2
+		checked.Image = "rbxassetid://3926309567"
+		checked.ImageColor3 = Color3.fromRGB(189, 189, 189)
+		checked.ImageRectOffset = Vector2.new(784, 420)
+		checked.ImageRectSize = Vector2.new(48, 48)
+		checked.ImageTransparency = 1.000
+
+		Sample_2.Name = "Sample"
+		Sample_2.Parent = ScreenGui
+		Sample_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Sample_2.BackgroundTransparency = 1.000
+		Sample_2.Image = "http://www.roblox.com/asset/?id=4560909609"
+		Sample_2.ImageTransparency = 0.600
+
+		Sample_3.Name = "Sample"
+		Sample_3.Parent = ScreenGui
+		Sample_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Sample_3.BackgroundTransparency = 1.000
+		Sample_3.Image = "http://www.roblox.com/asset/?id=4560909609"
+		Sample_3.ImageTransparency = 0.600
+		
+		checked.MouseButton1Click:Connect(function()
+			callback()
+		end)
 	end
 
 	function window:Slider(text, options, callback)
