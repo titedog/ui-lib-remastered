@@ -351,11 +351,9 @@ function library:Window(title: string)
 		newB.ImageColor3 = Color3.fromRGB(255, 255, 255)
 		newB.ImageRectOffset = Vector2.new(204, 484)
 		newB.ImageRectSize = Vector2.new(36, 36)
-		newB.Parent = Frame_5
+		newB.MouseButton1Click:Connect(callback)
 		
-		newB.MouseButton1Click:Connect(function()
-			callback()
-		end)
+		newB.Parent = Frame_5
 	end
 
 	function window:Slider(text, options, callback)
