@@ -349,8 +349,10 @@ function library:Window(title: string)
 		checked.Position = UDim2.new(0.916318059, 0, 0.13333334, 0)
 		checked.Size = UDim2.new(0, 20, 0, 20)
 		checked.ZIndex = 2
-		checked.Image = "rbxassetid://3926309567"
-		checked.ImageTransparency = 0.000
+		checked.Image = "rbxassetid://3926305904"
+		checked.ImageColor3 = Color3.fromRGB(255, 183, 0)
+		checked.ImageRectOffset = Vector2.new(204, 484)
+		checked.ImageRectSize = Vector2.new(36, 36)
 		
 		checked.MouseButton1Click:Connect(function()
 			callback()
